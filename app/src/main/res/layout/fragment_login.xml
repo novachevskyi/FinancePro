@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:novachevskyi="http://schemas.android.com/apk/lib/com.novachevskyi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      style="@style/LinearLayoutSplash"
+      >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+      <com.novachevskyi.expenseslite.presentation.view.component.LogoTextView
+          android:id="@+id/tv_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/app_name"
+          style="@style/TextHuge"
+          novachevskyi:ttf="regular"
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        style="@style/LinearLayoutWithLargePadding"
+        >
+      <android.support.v7.widget.CardView
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/LinearLayoutWithLargePadding"
+            >
+          <EditText
+              android:id="@+id/et_username"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="@string/fragment_login_login_hint"
+              style="@style/EditTextSingleLineText"
+              />
+
+          <EditText
+              android:id="@+id/et_password"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="@string/fragment_login_password_hint"
+              style="@style/EditTextSingleLinePassword"
+              />
+
+          <Button
+              android:id="@+id/btn_login"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="@dimen/spacing_large"
+              android:layout_marginRight="@dimen/spacing_extra_large"
+              android:layout_marginLeft="@dimen/spacing_extra_large"
+              android:text="@string/fragment_login_login_button_title"
+              />
+        </LinearLayout>
+      </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        style="@style/LinearLayoutWithLargePadding"
+        >
+
+      <TextView
+          android:id="@+id/tv_sign_up"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:text="@string/fragment_login_sign_up_button_text"
+          style="@style/TextClickable"
+          />
+
+    </LinearLayout>
+
+  </LinearLayout>
+</ScrollView>

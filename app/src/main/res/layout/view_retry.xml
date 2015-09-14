@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_retry"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:visibility="gone"
+    >
+
+  <TextView
+      android:id="@+id/tv_main"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/spacing_normal"
+      android:text="@string/view_retry_can_not_load_data"
+      style="@style/TextGreyHeader"
+      />
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tv_main"
+      android:text="@string/view_retry_try_again"
+      style="@style/TextBlueHeader"
+      />
+
+</RelativeLayout>

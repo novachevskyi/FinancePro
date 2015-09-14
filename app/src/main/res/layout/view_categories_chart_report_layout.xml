@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+  <org.eazegraph.lib.charts.PieChart
+      android:id="@+id/v_pie_chart"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/height_huge"
+      app:egLegendTextSize="@dimen/font_large"
+      app:egUsePieRotation="true"
+      app:egValueTextSize="@dimen/font_extra_large_double"
+      app:egAutoCenter="true"
+      app:egOpenClockwise="false"
+      app:egInnerValueUnit="%"
+      />
+</LinearLayout>

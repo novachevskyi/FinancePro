@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/LinearLayoutBackground"
+    >
+
+  <LinearLayout
+      android:id="@+id/ll_main"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/spacing_large"
+        android:layout_height="wrap_content"
+        >
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          style="@style/LinearLayoutWithNormalPadding"
+          >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextGreyHeaderBold"
+            />
+
+        <com.novachevskyi.expenseslite.presentation.view.component.CategoriesChartReportLayoutView
+            android:id="@+id/v_categories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            />
+
+        <TextView
+            android:id="@+id/tv_total_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextSmall"
+            />
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_normal"
+            style="@style/TextLarge"
+            />
+
+      </LinearLayout>
+
+      <com.novachevskyi.expenseslite.presentation.view.component.ExpensesSwitchButtonView
+          android:id="@+id/v_expense_switch"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="end"
+          android:layout_margin="@dimen/spacing_small"
+          />
+
+    </android.support.v7.widget.CardView>
+
+  </LinearLayout>
+
+  <include
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+      layout="@layout/view_progress"
+      />
+
+  <include
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      layout="@layout/view_retry"
+      />
+
+</LinearLayout>

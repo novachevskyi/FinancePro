@@ -1,0 +1,324 @@
+<resources>
+  <string name="app_name">Expenses Lite</string>
+
+  <string name="exception_message_generic">There was an application error</string>
+  <string name="exception_message_loading_web_data_error">Can not load data from web. Please check
+    your Internet connection and try again later.
+  </string>
+  <string name="exception_message_not_found_web_data_error">Requested object is not found</string>
+
+  <string name="validator_login_is_required">Login is required</string>
+  <string name="validator_login_is_to_long">Your login is to long</string>
+  <string name="validator_amount_is_required">Amount is required</string>
+  <string name="validator_title_is_required">Title is required</string>
+  <string name="validator_title_is_to_long">Your title is to long</string>
+  <string name="validator_characters_not_allowed">Special characters are not
+    allowed
+  </string>
+  <string name="validator_password_have_to_contain_characters">Password have to contain 6-32
+    characters
+  </string>
+  <string name="validator_email_is_required">E-mail is required</string>
+  <string name="validator_email_is_too_long">Your e-mail is to long</string>
+  <string name="validator_email_is_not_valid">Please enter a valid email address</string>
+  <string name="validator_password_confirm_should_match">Confirmation should match with password
+  </string>
+  <string name="validator_account_is_required">Account is required</string>
+
+  <string name="dialog_ok_button_title">OK</string>
+  <string name="dialog_yes_button_title">YES</string>
+  <string name="dialog_no_button_title">NO</string>
+
+  <string name="adapter_accounts_amount_text_template">$%.2f</string>
+
+  <string name="adapter_drawer_menu_account_header">Accounts</string>
+  <string name="adapter_drawer_menu_transaction_header">Transactions</string>
+  <string name="adapter_drawer_menu_budget_header">Budgets</string>
+  <string name="adapter_drawer_menu_category_header">Categories</string>
+  <string name="adapter_drawer_menu_general_header">General</string>
+  <string name="adapter_drawer_menu_calendar_header">Calendar</string>
+  <string name="adapter_drawer_menu_categories_header">Categories</string>
+
+  <string name="adapter_reports_month_month_template">MMMM</string>
+
+  <string name="adapter_budgets_period_template">Budget validity period:</string>
+  <string name="adapter_budgets_month_day_template">dd MMMM yyyy</string>
+  <string name="adapter_budgets_month_day_year_template">dd MMMM yyyy</string>
+
+  <string name="adapter_transactions_amount_text_template">$%.2f</string>
+  <string name="adapter_transactions_month_day_year_template">MM/dd/yyyy</string>
+  <string name="adapter_transactions_payee_header">Payee:</string>
+  <string name="adapter_transactions_source_header">Source:</string>
+  <string name="adapter_transactions_notes_header">Notes:</string>
+
+  <string name="activity_registration_registration_toolbar_title">Registration</string>
+
+  <string name="activity_subscription_subscription_toolbar_title">Subscription</string>
+
+  <string name="activity_main_general_report_toolbar_title">General</string>
+  <string name="activity_main_accounts_toolbar_title">Accounts</string>
+  <string name="activity_main_transactions_toolbar_title">Transactions</string>
+  <string name="activity_main_budgets_toolbar_title">Budgets</string>
+  <string name="activity_main_drawer_open">Drawer open</string>
+  <string name="activity_main_drawer_close">Drawer close</string>
+  <string name="activity_main_calendar_toolbar_title">Calendar</string>
+  <string name="activity_main_categories_toolbar_title">Categories</string>
+  <string name="activity_main_logout_title">Logout</string>
+  <string name="activity_main_are_you_sure_logout_title">Are you sure you want to logout?</string>
+  <string name="activity_main_rate_title">Rate %s</string>
+  <string name="activity_main_if_you_enjoy_rate_please">If you enjoy using %s, please take a moment
+    to rate it. Thanks for your support!
+  </string>
+  <string name="activity_main_rate_button_title">RATE</string>
+  <string name="activity_main_no_thanks_button_title">NO THANKS</string>
+  <string name="activity_main_later_button_title">LATER</string>
+
+  <string name="activity_add_account_new_account_toolbar_title">New account</string>
+
+  <string name="activity_add_transaction_new_transaction_toolbar_title">New transaction</string>
+  <string name="activity_add_transaction_new_income_toolbar_title">Income payment</string>
+  <string name="activity_add_transaction_new_outcome_toolbar_title">Outcome payment</string>
+
+  <string name="activity_transactions_list_today_toolbar_title">Today</string>
+  <string name="activity_transactions_list_this_month_toolbar_title">This month</string>
+  <string name="activity_transactions_list_transactions_title">Transactions</string>
+  <string name="activity_transactions_month_date_format">MMMM</string>
+  <string name="activity_transactions_list_account_toolbar_title">Account</string>
+  <string name="activity_transactions_list_budget_toolbar_title">Budget</string>
+
+  <string name="activity_add_transaction_transfer_new_transfer_transaction">New transfer</string>
+
+  <string name="activity_add_budget_new_budget_toolbar_title">New budget</string>
+
+  <string name="activity_in_app_purchase_subscription_not_supported">Subscriptions are not supported
+    on
+    your device yet.
+  </string>
+  <string name="activity_in_app_purchase_problem_setting_app">Problem setting up in-app billing.
+  </string>
+  <string name="activity_in_app_purchase_unknown_error_purchasing">Error purchasing. Unknown error
+    occurred.
+  </string>
+  <string name="activity_in_app_purchase_auth_error_purchasing">Error purchasing. Authenticity
+    verification failed.
+  </string>
+  <string name="activity_in_app_purchase_success_becoming_premium">Your account successfully
+    upgraded to premium!
+  </string>
+
+  <string name="enum_category_title_transfer">Transfer</string>
+  <string name="enum_category_title_accessories">Accessories</string>
+  <string name="enum_category_title_entertainment">Entertainment</string>
+  <string name="enum_category_title_events">Events</string>
+  <string name="enum_category_title_food">Food</string>
+  <string name="enum_category_title_fuel">Fuel</string>
+  <string name="enum_category_title_gifts">Gifts</string>
+  <string name="enum_category_title_leisure">Leisure</string>
+  <string name="enum_category_title_management_fees">Management fees</string>
+  <string name="enum_category_title_other">Other</string>
+  <string name="enum_category_title_restaurants">Restaurants</string>
+  <string name="enum_category_title_salaries">Salaries</string>
+  <string name="enum_category_title_sports">Sports</string>
+  <string name="enum_category_title_studies">Studies</string>
+  <string name="enum_category_title_transportation">Transportation</string>
+  <string name="enum_category_title_vacations">Vacations</string>
+
+  <string name="recycler_view_premium_item_drawer_menu_become_premium">Become Premium!</string>
+
+  <string name="view_expenses_switch_button_income_title">Incomes</string>
+  <string name="view_expenses_switch_button_expense_title">Expenses</string>
+
+  <string name="view_retry_can_not_load_data">Can not load data. Please check your network
+    connection.
+  </string>
+  <string name="view_retry_try_again">TRY AGAIN</string>
+
+  <string name="view_fab_main_accounts_title">Accounts</string>
+  <string name="view_fab_main_transactions_title">Transactions</string>
+  <string name="view_fab_main_budgets_title">Budgets</string>
+
+  <string name="view_accounts_total_amount_template">Total amount: $%.2f</string>
+  <string name="view_accounts_total_amount_empty">Total amount: …</string>
+
+  <string name="view_money_edit_text_zero_numeric_value">$0.00</string>
+  <string name="view_money_edit_text_currency_symbol">$</string>
+
+  <string-array name="view_payment_method_spinner_methods">
+    <item>Cash</item>
+    <item>Credit card</item>
+    <item>Debit</item>
+  </string-array>
+
+  <string-array name="view_category_spinner_categories">
+    <item>Accessories</item>
+    <item>Entertainment</item>
+    <item>Events</item>
+    <item>Food</item>
+    <item>Fuel</item>
+    <item>Gifts</item>
+    <item>Leisure</item>
+    <item>Management fees</item>
+    <item>Other</item>
+    <item>Restaurants</item>
+    <item>Salaries</item>
+    <item>Sports</item>
+    <item>Studies</item>
+    <item>Transportation</item>
+    <item>Vacations</item>
+  </string-array>
+
+  <string name="view_accept_accept_title">ACCEPT</string>
+
+  <string name="view_date_picker_text_view_date_format">EEEE, dd MMMM yyyy</string>
+
+  <string name="view_account_picker_text_view_tap_to_pick">Select account</string>
+
+  <string name="view_details_button_details_title">DETAILS</string>
+
+  <string name="view_transactions_button_details_title">FLOW</string>
+
+  <string name="view_base_report_layout_income">Income</string>
+  <string name="view_base_report_layout_expense">Expense</string>
+  <string name="view_base_report_layout_balance">Balance</string>
+  <string name="view_base_report_layout_amount_text_template">$%.2f</string>
+
+  <string name="view_budget_report_layout_budget">Budget</string>
+  <string name="view_budget_report_layout_spent">Spent</string>
+  <string name="view_budget_report_layout_balance">Balance</string>
+  <string name="view_budget_report_layout_amount_text_template">$%.2f</string>
+
+  <string name="view_base_chart_report_layout_income_dots">Income:</string>
+  <string name="view_base_chart_report_layout_expense_dots">Expense:</string>
+  <string name="view_base_chart_report_layout_balance_dots">Current:</string>
+
+  <string name="view_categories_chart_report_layout_no_categories_expenses">No expenses by
+    category
+  </string>
+
+  <string name="fragment_login_authenticating">Authenticating</string>
+  <string name="fragment_login_please_wait_for_server_response">Please wait for server response…
+  </string>
+  <string name="fragment_login_authentication_error">Authentication error</string>
+  <string name="fragment_login_login_hint">Login</string>
+  <string name="fragment_login_password_hint">Password</string>
+  <string name="fragment_login_login_button_title">Login</string>
+  <string name="fragment_login_sign_up_button_text">Sign up to start using application</string>
+
+  <string name="fragment_registration_login_hint">Login</string>
+  <string name="fragment_registration_email_hint">E-mail</string>
+  <string name="fragment_registration_password_hint">Password</string>
+  <string name="fragment_registration_confirm_hint">Confirm</string>
+  <string name="fragment_registration_sign_up_button_title">Sign Up</string>
+  <string name="fragment_registration_registration_title">Registration</string>
+  <string name="fragment_registration_please_wait_for_server_response">Please wait for server
+    response
+  </string>
+  <string name="fragment_registration_registration_error_title">Registration error</string>
+
+  <string name="fragment_add_account_creating_fragment">Creating new account …</string>
+  <string name="fragment_add_account_please_wait_for_server_response">Please wait for server
+    response
+  </string>
+  <string name="fragment_add_account_can_not_create_new_account">Can not create new account</string>
+  <string name="fragment_add_account_account_title">Account title</string>
+  <string name="fragment_add_account_enter_new_account_title">Enter new account title</string>
+  <string name="fragment_add_account_current_amount">Current amount</string>
+  <string name="fragment_add_account_payment_method">Payment method</string>
+  <string name="fragment_add_account_account_created_successfully">Account created successfully
+  </string>
+
+  <string name="fragment_add_transaction_creating_fragment">Creating new transaction …</string>
+  <string name="fragment_add_transaction_please_wait_for_server_response">Please wait for server
+    response
+  </string>
+  <string name="fragment_add_transaction_transaction_amount">Transaction amount</string>
+  <string name="fragment_add_transaction_can_not_create_new_transaction">Can not create new
+    transaction
+  </string>
+  <string name="fragment_add_transaction_transaction_created_successfully">Transaction created
+    successfully
+  </string>
+  <string name="fragment_add_transaction_payment_date">Payment date</string>
+  <string name="fragment_add_transaction_source_account">Account</string>
+  <string name="fragment_add_transaction_category">Category</string>
+  <string name="fragment_add_transaction_notes">Notes</string>
+  <string name="fragment_add_transaction_enter_notes">Enter payment notes</string>
+  <string name="fragment_add_transaction_payee_name">Payee</string>
+  <string name="fragment_add_transaction_enter_payee_name">Enter payee name</string>
+
+  <string name="fragment_add_transaction_transfer_creating_fragment">Creating new transfer …
+  </string>
+  <string name="fragment_add_transaction_transfer_please_wait_for_server_response">Please wait for
+    server
+    response
+  </string>
+  <string name="fragment_add_transaction_transfer_transaction_amount">Transfer amount</string>
+  <string name="fragment_add_transaction_transfer_payment_date">Payment date</string>
+  <string name="fragment_add_transaction_transfer_source_account">Source account</string>
+  <string name="fragment_add_transaction_transfer_destination_account">Destination account</string>
+  <string name="fragment_add_transaction_transfer_notes">Notes</string>
+  <string name="fragment_add_transaction_transfer_enter_notes">Enter payment notes</string>
+  <string name="fragment_add_transaction_transfer_can_not_create_new_transaction">Can not create new
+    transfer
+  </string>
+  <string name="fragment_add_transaction_transfer_transaction_created_successfully">Transfer created
+    successfully
+  </string>
+
+  <string name="fragment_add_budget_creating_fragment">Creating new budget …
+  </string>
+  <string name="fragment_add_budget_please_wait_for_server_response">Please wait for
+    server
+    response
+  </string>
+  <string name="fragment_add_budget_can_not_create_new_budget">Can not create new
+    budget
+  </string>
+  <string name="fragment_add_budget_budget_title">Budget title</string>
+  <string name="fragment_add_budget_enter_new_budget_title">Enter new budget title</string>
+  <string name="fragment_add_budget_source_account">Source account</string>
+  <string name="fragment_add_budget_category">Category</string>
+  <string name="fragment_add_budget_budget_amount">Budget amount</string>
+  <string name="fragment_add_budget_alert_amount">Alert amount</string>
+  <string name="fragment_add_budget_period_start_date">Period start date</string>
+  <string name="fragment_add_budget_period_end_date">Period end date</string>
+  <string name="fragment_add_budget_notes">Notes</string>
+  <string name="fragment_add_budget_enter_notes">Enter budget notes</string>
+  <string name="fragment_add_budget_budget_created_successfully">Budget created
+    successfully
+  </string>
+
+  <string name="fragment_drawer_menu_logout_title">Logout</string>
+
+  <string name="fragment_general_report_spending_today">Spending Today</string>
+  <string name="fragment_general_report_amount_text_template">$%.2f</string>
+  <string name="fragment_general_report_about_month_template">Total by %s</string>
+  <string name="fragment_general_report_date_format">MMMM</string>
+  <string name="fragment_general_report_ratio_title">The ratio of Incomes and Expenses for the
+    accounts total balance:
+  </string>
+  <string name="fragment_general_report_current_total_balance">Current total balance:</string>
+  <string name="fragment_general_report_expenses_by_category">Expenses by category</string>
+
+  <string name="fragment_categories_month_report_date_format">MMMM</string>
+  <string name="fragment_categories_month_report_report_by_categories">Report by %s</string>
+  <string name="fragment_categories_month_report_total_incomes">Total incomes:</string>
+  <string name="fragment_categories_month_report_total_expenses">Total expenses:</string>
+  <string name="fragment_categories_month_report_amount_text_template">$%.2f</string>
+
+  <string name="fragment_accounts_list_dialog_empty_text">Accounts list is empty</string>
+
+  <string name="fragment_accounts_list_empty_text">Accounts list is empty</string>
+
+  <string name="fragment_budgets_list_empty_text">Budgets list is empty</string>
+
+  <string name="fragment_transactions_list_empty_text">Transactions list is empty</string>
+
+  <string name="fragment_subscription_monthly_plan">Monthly plan</string>
+  <string name="fragment_subscription_monthly_plan_description">Get Premium for a month.
+    Subscription blocks all advertisements in entire application. This monthly plan is
+    auto-renewable. Please note that Premium features will be available only after application restart.
+  </string>
+  <string name="fragment_subscription_subscribe_button_title">SUBSCRIBE</string>
+
+</resources>

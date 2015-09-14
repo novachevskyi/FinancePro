@@ -1,0 +1,118 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.novachevskyi.expenseslite">
+
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="com.android.vending.BILLING"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+  <application android:allowBackup="true"
+      android:label="@string/app_name"
+      android:name="com.novachevskyi.expenseslite.FinanceProApplication"
+      android:icon="@mipmap/ic_launcher"
+      android:theme="@style/AppTheme">
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version"/>
+    <meta-data
+        android:name="com.crashlytics.ApiKey"
+        android:value="8ccf2e43eb3e6188aba8ebba9c56b2d3abd2574e"/>
+
+    <activity
+        android:name="com.novachevskyi.expenseslite.presentation.view.activity.authorization.SplashActivity"
+        android:launchMode="singleTop"
+        android:screenOrientation="sensorPortrait"
+        android:theme="@style/NoActionBarTheme">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+
+    <activity
+        android:name="com.novachevskyi.expenseslite.presentation.view.activity.authorization.LoginActivity"
+        android:screenOrientation="sensorPortrait"
+        android:theme="@style/NoActionBarTheme"/>
+
+    <activity
+        android:name="com.novachevskyi.expenseslite.presentation.view.activity.authorization.RegistrationActivity"
+        android:screenOrientation="sensorPortrait"
+        android:theme="@style/NoActionBarTheme"
+        android:parentActivityName="com.novachevskyi.expenseslite.presentation.view.activity.authorization.LoginActivity">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value="com.novachevskyi.expenseslite.presentation.view.activity.authorization.LoginActivity"/>
+    </activity>
+
+    <activity
+        android:name="com.novachevskyi.expenseslite.presentation.view.activity.MainActivity"
+        android:launchMode="singleInstance"
+        android:screenOrientation="sensorPortrait"
+        android:theme="@style/NoActionBarTheme"/>
+
+    <activity
+        android:name="com.novachevskyi.expenseslite.presentation.view.activity.accounts.AddAccountActivity"
+        android:screenOrientation="sensorPortrait"
+        android:theme="@style/NoActionBarTheme"
+        android:parentActivityName="com.novachevskyi.expenseslite.presentation.view.activity.MainActivity">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value="com.novachevskyi.expenseslite.presentation.view.activity.MainActivity"/>
+    </activity>
+
+    <activity
+        android:name="com.novachevskyi.expenseslite.presentation.view.activity.transactions.AddTransactionActivity"
+        android:screenOrientation="sensorPortrait"
+        android:theme="@style/NoActionBarTheme"
+        android:parentActivityName="com.novachevskyi.expenseslite.presentation.view.activity.MainActivity">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value="com.novachevskyi.expenseslite.presentation.view.activity.MainActivity"/>
+    </activity>
+
+    <activity
+        android:name="com.novachevskyi.expenseslite.presentation.view.activity.transactions.AddTransactionTransferActivity"
+        android:screenOrientation="sensorPortrait"
+        android:theme="@style/NoActionBarTheme"
+        android:parentActivityName="com.novachevskyi.expenseslite.presentation.view.activity.MainActivity">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value="com.novachevskyi.expenseslite.presentation.view.activity.MainActivity"/>
+    </activity>
+
+    <activity
+        android:name="com.novachevskyi.expenseslite.presentation.view.activity.budgets.AddBudgetActivity"
+        android:screenOrientation="sensorPortrait"
+        android:theme="@style/NoActionBarTheme"
+        android:parentActivityName="com.novachevskyi.expenseslite.presentation.view.activity.MainActivity">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value="com.novachevskyi.expenseslite.presentation.view.activity.MainActivity"/>
+    </activity>
+
+    <activity
+        android:name="com.novachevskyi.expenseslite.presentation.view.activity.transactions.TransactionsListActivity"
+        android:screenOrientation="sensorPortrait"
+        android:theme="@style/NoActionBarTheme"
+        android:parentActivityName="com.novachevskyi.expenseslite.presentation.view.activity.MainActivity">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value="com.novachevskyi.expenseslite.presentation.view.activity.MainActivity"/>
+    </activity>
+
+    <activity
+        android:name="com.novachevskyi.expenseslite.presentation.view.activity.subscription.SubscriptionActivity"
+        android:screenOrientation="sensorPortrait"
+        android:theme="@style/NoActionBarTheme"
+        android:parentActivityName="com.novachevskyi.expenseslite.presentation.view.activity.MainActivity">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value="com.novachevskyi.expenseslite.presentation.view.activity.MainActivity"/>
+    </activity>
+
+    <activity
+        android:name="com.google.android.gms.ads.AdActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+  </application>
+
+</manifest>

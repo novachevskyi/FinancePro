@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+      <android.support.v7.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_margin="@dimen/spacing_large"
+          android:layout_height="wrap_content"
+          >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/LinearLayoutWithNormalPadding"
+            >
+
+          <LinearLayout
+              android:id="@+id/ll_dummy"
+              android:orientation="horizontal"
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              style="@style/LinearLayoutDummyFocusable"
+              />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/fragment_add_budget_budget_amount"
+              style="@style/TextGreyHeaderBold"
+              />
+
+          <com.novachevskyi.expenseslite.presentation.view.component.MoneyEditTextView
+              android:id="@+id/v_money"
+              android:layout_width="@dimen/width_large"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/spacing_normal"
+              android:layout_gravity="end"
+              style="@style/EditTextSingleLineTextNumeric"
+              />
+        </LinearLayout>
+
+      </android.support.v7.widget.CardView>
+
+      <android.support.v7.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_marginLeft="@dimen/spacing_large"
+          android:layout_marginRight="@dimen/spacing_large"
+          android:layout_height="wrap_content"
+          >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/LinearLayoutWithNormalPadding"
+            >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/fragment_add_budget_category"
+              style="@style/TextGreyHeaderBold"
+              />
+
+          <com.novachevskyi.expenseslite.presentation.view.component.CategorySpinnerView
+              android:id="@+id/v_category"
+              android:layout_width="match_parent"
+              android:layout_marginTop="@dimen/spacing_normal"
+              android:layout_height="wrap_content"
+              />
+        </LinearLayout>
+
+      </android.support.v7.widget.CardView>
+
+      <android.support.v7.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_marginLeft="@dimen/spacing_large"
+          android:layout_marginRight="@dimen/spacing_large"
+          android:layout_marginTop="@dimen/spacing_large"
+          android:layout_height="wrap_content"
+          >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/LinearLayoutWithNormalPadding"
+            >
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/fragment_add_budget_alert_amount"
+              style="@style/TextGreyHeaderBold"
+              />
+
+          <com.novachevskyi.expenseslite.presentation.view.component.MoneyEditTextView
+              android:id="@+id/v_alert_money"
+              android:layout_width="@dimen/width_large"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/spacing_normal"
+              android:layout_gravity="end"
+              style="@style/EditTextSingleLineTextNumeric"
+              />
+        </LinearLayout>
+
+      </android.support.v7.widget.CardView>
+
+      <android.support.v7.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_marginLeft="@dimen/spacing_large"
+          android:layout_marginRight="@dimen/spacing_large"
+          android:layout_marginTop="@dimen/spacing_large"
+          android:layout_height="wrap_content"
+          >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/LinearLayoutWithNormalPadding"
+            >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/fragment_add_budget_period_start_date"
+              style="@style/TextGreyHeaderBold"
+              />
+
+          <com.novachevskyi.expenseslite.presentation.view.component.DatePickerTextViewView
+              android:id="@+id/v_date_from_picker"
+              android:layout_width="match_parent"
+              android:layout_marginTop="@dimen/spacing_normal"
+              android:layout_height="wrap_content"
+              />
+        </LinearLayout>
+
+      </android.support.v7.widget.CardView>
+
+      <android.support.v7.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_marginLeft="@dimen/spacing_large"
+          android:layout_marginRight="@dimen/spacing_large"
+          android:layout_marginTop="@dimen/spacing_large"
+          android:layout_height="wrap_content"
+          >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/LinearLayoutWithNormalPadding"
+            >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/fragment_add_budget_period_end_date"
+              style="@style/TextGreyHeaderBold"
+              />
+
+          <com.novachevskyi.expenseslite.presentation.view.component.DatePickerTextViewView
+              android:id="@+id/v_date_to_picker"
+              android:layout_width="match_parent"
+              android:layout_marginTop="@dimen/spacing_normal"
+              android:layout_height="wrap_content"
+              />
+        </LinearLayout>
+
+      </android.support.v7.widget.CardView>
+
+      <android.support.v7.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_margin="@dimen/spacing_large"
+          android:layout_height="wrap_content"
+          >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/LinearLayoutWithNormalPadding"
+            >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/fragment_add_budget_notes"
+              style="@style/TextGreyHeaderBold"
+              />
+
+          <EditText
+              android:id="@+id/et_notes"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/spacing_normal"
+              android:hint="@string/fragment_add_budget_enter_notes"
+              style="@style/EditTextMultiLineText"
+              />
+        </LinearLayout>
+
+      </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+  </ScrollView>
+
+  <com.novachevskyi.expenseslite.presentation.view.component.AcceptView
+      android:id="@+id/v_accept"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      />
+</LinearLayout>

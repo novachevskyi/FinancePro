@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/spacing_small"
+    android:layout_height="wrap_content"
+    >
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      style="@style/LinearLayoutWithNormalPadding"
+      >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextGreyHeaderBold"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+      <ImageView
+          android:id="@+id/iv_type"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/spacing_small"
+          android:layout_marginBottom="@dimen/spacing_small"
+          />
+      <TextView
+          android:id="@+id/tv_amount"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_margin="@dimen/spacing_normal"
+          style="@style/TextLarge"
+          />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_payee_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        style="@style/TextSmall"
+        />
+
+    <TextView
+        android:id="@+id/tv_payee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_small"
+        style="@style/TextSmall"
+        />
+
+    <TextView
+        android:id="@+id/tv_notes_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:text="@string/adapter_transactions_notes_header"
+        style="@style/TextSmall"
+        />
+
+    <TextView
+        android:id="@+id/tv_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_small"
+        style="@style/TextSmall"
+        />
+  </LinearLayout>
+
+  <TextView
+      android:id="@+id/tv_date"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="end"
+      android:layout_margin="@dimen/spacing_large"
+      style="@style/TextMini"
+      />
+
+</android.support.v7.widget.CardView>

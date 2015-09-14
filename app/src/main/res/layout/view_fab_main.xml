@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_fab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <com.getbase.floatingactionbutton.FloatingActionsMenu
+      android:id="@+id/fab_actions"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginBottom="@dimen/spacing_large"
+      android:layout_marginRight="@dimen/spacing_large"
+      android:layout_marginEnd="@dimen/spacing_large"
+      fab:fab_addButtonColorNormal="@color/white"
+      fab:fab_addButtonColorPressed="@color/white_pressed"
+      fab:fab_addButtonPlusIconColor="@color/half_black"
+      fab:fab_labelStyle="@style/TextFabButton"
+      >
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_action_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/blue"
+        fab:fab_title="@string/view_fab_main_budgets_title"
+        fab:fab_colorPressed="@color/blue_pressed"
+        fab:fab_icon="@drawable/ic_budget"
+        />
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_action_transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/green"
+        fab:fab_title="@string/view_fab_main_transactions_title"
+        fab:fab_colorPressed="@color/green_pressed"
+        fab:fab_icon="@drawable/ic_transaction"
+        />
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_action_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/deep_orange"
+        fab:fab_title="@string/view_fab_main_accounts_title"
+        fab:fab_colorPressed="@color/deep_orange_pressed"
+        fab:fab_icon="@drawable/ic_account"
+        />
+
+  </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+  <com.getbase.floatingactionbutton.FloatingActionsMenu
+      android:id="@+id/fab_account_actions"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginBottom="@dimen/spacing_large_double"
+      android:layout_marginRight="@dimen/spacing_large"
+      android:layout_marginEnd="@dimen/spacing_large"
+      fab:fab_addButtonColorNormal="@color/white"
+      fab:fab_addButtonColorPressed="@color/white_pressed"
+      fab:fab_addButtonPlusIconColor="@color/half_black"
+      fab:fab_addButtonStrokeVisible="false"
+      fab:fab_expandDirection="left"
+      >
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_account_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/green"
+        fab:fab_colorPressed="@color/green_pressed"
+        fab:fab_icon="@drawable/ic_plus"
+        fab:fab_size="mini"
+        />
+
+  </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+  <com.getbase.floatingactionbutton.FloatingActionsMenu
+      android:id="@+id/fab_transaction_actions"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginBottom="@dimen/spacing_large_triple"
+      android:layout_marginRight="@dimen/spacing_large"
+      android:layout_marginEnd="@dimen/spacing_large"
+      fab:fab_addButtonColorNormal="@color/white"
+      fab:fab_addButtonColorPressed="@color/white_pressed"
+      fab:fab_addButtonPlusIconColor="@color/half_black"
+      fab:fab_addButtonStrokeVisible="false"
+      fab:fab_expandDirection="left"
+      >
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_transaction_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        fab:fab_colorNormal="@color/blue"
+        fab:fab_colorPressed="@color/blue_pressed"
+        fab:fab_icon="@drawable/ic_transfer"
+        fab:fab_size="mini"
+        />
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_transaction_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/red"
+        fab:fab_colorPressed="@color/red_pressed"
+        fab:fab_icon="@drawable/ic_minus"
+        fab:fab_size="mini"
+        />
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_transaction_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/green"
+        fab:fab_colorPressed="@color/green_pressed"
+        fab:fab_icon="@drawable/ic_plus"
+        fab:fab_size="mini"
+        />
+
+  </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+  <com.getbase.floatingactionbutton.FloatingActionsMenu
+      android:id="@+id/fab_budget_actions"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginBottom="@dimen/spacing_large_quadro"
+      android:layout_marginRight="@dimen/spacing_large"
+      android:layout_marginEnd="@dimen/spacing_large"
+      fab:fab_addButtonColorNormal="@color/white"
+      fab:fab_addButtonColorPressed="@color/white_pressed"
+      fab:fab_addButtonPlusIconColor="@color/half_black"
+      fab:fab_addButtonStrokeVisible="false"
+      fab:fab_expandDirection="left"
+      >
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_budget_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/green"
+        fab:fab_colorPressed="@color/green_pressed"
+        fab:fab_icon="@drawable/ic_plus"
+        fab:fab_size="mini"
+        />
+
+  </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

@@ -1,0 +1,288 @@
+<resources>
+
+  <style name="NoActionBarTheme" parent="BaseTheme">
+    <item name="windowActionBar">false</item>
+  </style>
+
+  <style name="AppTheme" parent="BaseTheme">
+  </style>
+
+  <style name="BaseTheme" parent="Theme.AppCompat">
+    <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+
+    <item name="colorPrimary">@color/indigo_pressed</item>
+    <item name="colorPrimaryDark">@color/indigo_dark</item>
+    <item name="colorAccent">@color/pink</item>
+
+    <item name="colorControlNormal">@color/white</item>
+
+    <item name="android:editTextStyle">@style/EditTextStyle</item>
+
+    <item name="android:windowBackground">@color/light_grey</item>
+  </style>
+
+  <style name="EditTextStyle" parent="@android:style/Widget.EditText">
+    <item name="android:background">@drawable/edit_text_holo_light</item>
+  </style>
+
+  <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+    <item name="spinBars">false</item>
+    <item name="color">@android:color/white</item>
+  </style>
+
+  <style name="SpinnerBaseTheme" parent="android:Widget.Holo.Light.Spinner">
+    <item name="android:background">@drawable/spinner_background_holo_light</item>
+  </style>
+
+  <style name="Text">
+    <item name="android:textColor">@android:color/white</item>
+  </style>
+
+  <style name="TextGreyHeader">
+    <item name="android:textColor">@color/dark_grey</item>
+    <item name="android:textSize">@dimen/font_normal</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="TextGreyLargeHeader">
+    <item name="android:textColor">@color/dark_grey</item>
+    <item name="android:textSize">@dimen/font_large</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="TextGreyHeaderBold" parent="TextGreyHeader">
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="TextBlueHeader">
+    <item name="android:textColor">@color/blue_pressed</item>
+    <item name="android:textSize">@dimen/font_extra_large</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="TextHeader" parent="Text">
+    <item name="android:textSize">@dimen/font_extra_large</item>
+  </style>
+
+  <style name="TextHeaderSmall" parent="Text">
+    <item name="android:textSize">@dimen/font_normal</item>
+  </style>
+
+  <style name="TextHeaderNormal" parent="Text">
+    <item name="android:textSize">@dimen/font_large</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="TextMain">
+    <item name="android:textColor">@android:color/black</item>
+  </style>
+
+  <style name="TextLargeBold" parent="TextMain">
+    <item name="android:textSize">@dimen/font_large</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="TextLarge" parent="TextMain">
+    <item name="android:textSize">@dimen/font_large</item>
+  </style>
+
+  <style name="TextExtraLarge" parent="TextMain">
+    <item name="android:textSize">@dimen/font_extra_large</item>
+  </style>
+
+  <style name="TextNormal" parent="TextMain">
+    <item name="android:textSize">@dimen/font_normal</item>
+  </style>
+
+  <style name="TextSmallCenter" parent="TextSmall">
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="TextNormalMiniEnd" parent="TextNormalMini">
+    <item name="android:gravity">end</item>
+  </style>
+
+  <style name="TextNormalMini" parent="TextMain">
+    <item name="android:textSize">@dimen/font_normal_mini</item>
+  </style>
+
+  <style name="TextSmall" parent="TextMain">
+    <item name="android:textSize">@dimen/font_small</item>
+  </style>
+
+  <style name="TextMini" parent="TextMain">
+    <item name="android:textSize">@dimen/font_mini</item>
+  </style>
+
+  <style name="TextHuge" parent="TextMain">
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/font_huge</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="TextClickable" parent="Widget.AppCompat.Light.ActionButton">
+    <item name="android:textSize">@dimen/font_large</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:clickable">true</item>
+    <item name="android:padding">@dimen/spacing_normal</item>
+  </style>
+
+  <style name="TextFabButton">
+    <item name="android:background">@drawable/fab_label_background</item>
+    <item name="android:textColor">@color/white</item>
+  </style>
+
+  <style name="LinearLayout">
+  </style>
+
+  <style name="LinearLayoutDummyFocusable" parent="LinearLayout">
+    <item name="android:focusable">true</item>
+    <item name="android:focusableInTouchMode">true</item>
+  </style>
+
+  <style name="LinearLayoutDrawer" parent="LinearLayout">
+    <item name="android:background">@color/light_grey</item>
+  </style>
+
+  <style name="LinearLayoutBackground" parent="LinearLayout">
+    <item name="android:background">@color/light_grey</item>
+  </style>
+
+  <style name="LinearLayoutDialog" parent="LinearLayout">
+    <item name="android:background">@color/light_grey</item>
+  </style>
+
+  <style name="LinearLayoutSplash" parent="LinearLayout">
+    <item name="android:background">@color/indigo_pressed</item>
+  </style>
+
+  <style name="LinearLayoutWithLargePadding" parent="LinearLayout">
+    <item name="android:padding">@dimen/spacing_large</item>
+  </style>
+
+  <style name="LinearLayoutWithNormalPadding" parent="LinearLayout">
+    <item name="android:padding">@dimen/spacing_normal</item>
+  </style>
+
+  <style name="LinearLayoutWithSmallPadding" parent="LinearLayout">
+    <item name="android:padding">@dimen/spacing_small</item>
+  </style>
+
+  <style name="LinearLayoutClickable" parent="LinearLayout">
+    <item name="android:background">@drawable/white_hover_background</item>
+    <item name="android:clickable">true</item>
+  </style>
+
+  <style name="LinearLayoutBackgroundClickable" parent="LinearLayoutWithNormalPadding">
+    <item name="android:background">@drawable/background_color_hover_background</item>
+  </style>
+
+  <style name="LinearLayoutWhiteClickable" parent="LinearLayoutWithNormalPadding">
+    <item name="android:background">@drawable/white_hover_background</item>
+  </style>
+
+  <style name="LinearLayoutWithNormalPaddingClickable" parent="LinearLayoutClickable">
+    <item name="android:padding">@dimen/spacing_normal</item>
+  </style>
+
+  <style name="LinearLayoutWithLargePaddingDark" parent="LinearLayoutWithLargePadding">
+    <item name="android:background">@color/dark_grey</item>
+  </style>
+
+  <style name="LinearLayoutWithLargePaddingGreenHover" parent="LinearLayoutWithLargePadding">
+    <item name="android:background">@drawable/green_hover_background</item>
+    <item name="android:clickable">true</item>
+  </style>
+
+  <style name="LinearLayoutWithHugePadding" parent="LinearLayout">
+    <item name="android:paddingTop">@dimen/spacing_extra_large</item>
+    <item name="android:paddingBottom">@dimen/spacing_extra_large</item>
+    <item name="android:paddingLeft">@dimen/spacing_large</item>
+    <item name="android:paddingRight">@dimen/spacing_large</item>
+  </style>
+
+  <style name="EditText">
+
+  </style>
+
+  <style name="EditTextMain" parent="EditText">
+    <item name="android:textColor">@android:color/black</item>
+    <item name="android:textColorHint">@android:color/darker_gray</item>
+    <item name="android:textSize">@dimen/font_large</item>
+  </style>
+
+  <style name="EditTextSingleLineText" parent="EditTextMain">
+    <item name="android:inputType">text</item>
+  </style>
+
+  <style name="EditTextMultiLineText" parent="EditTextMain">
+    <item name="android:inputType">textMultiLine</item>
+    <item name="android:lines">5</item>
+    <item name="android:minLines">1</item>
+    <item name="android:gravity">top|left</item>
+    <item name="android:maxLines">5</item>
+    <item name="android:scrollbars">vertical</item>
+  </style>
+
+  <style name="EditTextSingleLineTextDisabled" parent="EditTextMain">
+    <item name="android:inputType">text</item>
+    <item name="android:editable">false</item>
+    <item name="android:cursorVisible">false</item>
+    <item name="android:focusable">false</item>
+    <item name="android:clickable">true</item>
+  </style>
+
+  <style name="EditTextSingleLineTextNumeric" parent="EditTextMain">
+    <item name="android:inputType">numberDecimal</item>
+    <item name="android:gravity">end</item>
+  </style>
+
+  <style name="EditTextSingleLineTextEmail" parent="EditTextMain">
+    <item name="android:inputType">textEmailAddress</item>
+  </style>
+
+  <style name="EditTextSingleLinePassword" parent="EditTextMain">
+    <item name="android:inputType">textPassword</item>
+  </style>
+
+  <style name="Toolbar">
+    <item name="android:minHeight">?attr/actionBarSize</item>
+    <item name="android:background">?attr/colorPrimary</item>
+  </style>
+
+  <style name="RecyclerView">
+    <item name="android:clipToPadding">false</item>
+    <item name="android:paddingTop">@dimen/spacing_large</item>
+    <item name="android:paddingRight">@dimen/spacing_large</item>
+    <item name="android:paddingLeft">@dimen/spacing_large</item>
+  </style>
+
+  <style name="RecyclerViewSidePadding">
+    <item name="android:clipToPadding">false</item>
+    <item name="android:paddingRight">@dimen/spacing_large</item>
+    <item name="android:paddingLeft">@dimen/spacing_large</item>
+  </style>
+
+  <style name="RecyclerViewWithBottomPadding" parent="RecyclerView">
+    <item name="android:paddingBottom">@dimen/spacing_large_double</item>
+  </style>
+
+  <style name="RecyclerViewNormal" parent="RecyclerView">
+    <item name="android:paddingBottom">@dimen/spacing_large</item>
+  </style>
+
+  <style name="ViewDivider">
+    <item name="android:background">@color/grey</item>
+  </style>
+
+  <style name="ScrollView">
+    <item name="android:clipToPadding">false</item>
+  </style>
+
+  <style name="ScrollViewWithBottomPadding" parent="ScrollView">
+    <item name="android:paddingBottom">@dimen/spacing_large_double</item>
+  </style>
+
+</resources>
